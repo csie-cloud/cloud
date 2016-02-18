@@ -1,4 +1,4 @@
-moduledir '/etc/puppetlabs/code/modules'
+
 
 mod 'openstack/keystone'
 mod 'razorsedge/network'

@@ -1,0 +1,22 @@
+ip_ranges:
+  storage: 40
+  compute: 200
+  controller: 240
+
+subnets:
+  admin:
+    prefix: 192.168.217
+    mask: 255.255.0.0
+  manage:
+    prefix: 10.42.0
+    mask: 255.255.255.0
+  storage:
+    prefix: 10.41.0
+    mask: 255.255.255.0
+  external:
+    prefix: 172.16.217
+    mask: 255.255.0.0
+    gateway: 172.16.0.1
+
+dns:
+  - 192.168.217.250
