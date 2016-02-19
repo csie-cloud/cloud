@@ -4,11 +4,7 @@
 node /controller[1-3]/{
 
 
-  # Network interface setting
-  
- 
-  $host_type = $hostname.match(/^[a-z]*/)[0]
-  
+  # Network interface setting  
   class { '::network_config':
     ip_ranges => hiera('ip_ranges'),
     subnets => hiera('subnets'),
