@@ -20,3 +20,12 @@ subnets:
 
 dns:
   - 192.168.217.250
+
+# Used by network_config module
+interface_lists:
+  'PowerEdge 1950':
+    admin: eno1
+    external: eno2
+    manage: eno2.42
+    storage: eno2.41
+
