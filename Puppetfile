@@ -15,18 +15,14 @@ mod 'nanliu/staging', '1.0.3'
 mod 'puppetlabs/stdlib', '4.11.0'
 
 
-# Openstack
-mod 'openstack/keystone'
-mod 'openstack/glance'
-mod 'openstack/nova'
-mod 'openstack/neutron'
 
-# Dependencies of Keystone Glance Nova Neutron
+# Dependencies of Keystone Glance Nova Neutron Horizon
 mod 'dprince/qpid', '1.0.3'
 mod 'duritong/sysctl', '0.0.11'
 mod 'nanliu/staging', '1.0.3'
 mod 'openstack/cinder', '7.0.0'
 mod 'openstack/glance', '7.0.0'
+mod 'openstack/horizon', '7.0.0'
 mod 'openstack/keystone', '7.0.0'
 mod 'openstack/neutron', '7.0.0'
 mod 'openstack/nova', '7.0.0'
@@ -41,3 +37,4 @@ mod 'puppetlabs/mysql', '3.6.2'
 mod 'puppetlabs/postgresql', '3.4.2'
 mod 'puppetlabs/rabbitmq', '5.3.1'
 mod 'puppetlabs/stdlib', '4.11.0'
+mod 'saz/memcached', '2.8.1'
