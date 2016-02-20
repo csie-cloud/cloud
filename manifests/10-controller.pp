@@ -8,9 +8,12 @@ node /controller[1-3]/{
   class { '::network_config':
     ip_ranges => hiera('ip_ranges'),
     subnets => hiera('subnets'),
-    interface_lists => hiera('interface_lists')
+    interface_lists => hiera('interface_lists'),
+    dnss => hiera('dns')
   }
   
-  include ::controller_node
+  class { '::controller_node':
+    ovs_external_ip => $::network_config::ip_admin
+  }
 }
 
