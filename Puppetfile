@@ -1,13 +1,18 @@
 
 mod 'controller_node',
-    :git => 'https://github.com/csie-cloud/controller.git',
+    :git => 'https://github.com/csie-cloud/controller_node.git',
+    :ref => 'production'
+mod 'compute_node',
+    :git => 'https://github.com/csie-cloud/compute_node.git',
     :ref => 'production'    
+
 mod 'password',
     :git => 'git@bitbucket.org:csiecloud/password.git',
     :ref => 'production'
 mod 'network_config',
     :git => 'https://github.com/csie-cloud/network_config',
     :ref => 'production'
+
 
 forge 'http://forge.puppetlabs.com'
 
