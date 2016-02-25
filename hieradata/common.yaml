@@ -28,4 +28,10 @@ interface_lists:
     external: eno2
     manage: eno2.42
     storage: eno2.41
-
+  'PowerEdge R610':
+    admin: em1
+    external: em3
+    manage: em2
+    storage: em4
+    
+    
