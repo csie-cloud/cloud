@@ -9,11 +9,11 @@ node /controller[1-3]/{
     ip_ranges => hiera('ip_ranges'),
     subnets => hiera('subnets'),
     interface_lists => hiera('interface_lists'),
-    dnss => hiera('dns')
+    dnss => hiera('dns'),
   }
-  
+
   class { '::controller_node':
-    ovs_external_ip => $::network_config::ip_admin
+    management_ip => $::network_config::ip_manage
   }
 }
 
