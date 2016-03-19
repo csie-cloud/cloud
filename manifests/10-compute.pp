@@ -10,7 +10,6 @@ node /compute[0-9]*/{
   }
   
   class { '::compute_node':
-    ovs_external_ip => $::network_config::ip_admin,
     manage_ip => $::network_config::ip_manage
   }
   
