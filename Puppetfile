@@ -8,9 +8,9 @@ mod 'compute_node',
     :git => 'https://github.com/csie-cloud/compute_node.git',
     :ref => 'production'    
 
-# mod 'password',
-#     :git => 'git@bitbucket.org:csiecloud/password.git',
-#     :ref => 'production'
+mod 'password',
+    :git => 'git@bitbucket.org:csiecloud/password.git',
+    :ref => 'production'
 mod 'network_config',
     :git => 'https://github.com/csie-cloud/network_config',
     :ref => 'production'
@@ -70,3 +70,6 @@ mod 'archive',
   :git => "https://github.com/gini/puppet-archive.git", 
   :commit => "e21f401d01da8d25848319c95ff2ccf435b0ba8b"
 
+
+mod 'theforeman/dns'
+mod 'theforeman/dhcp'
